@@ -11,9 +11,18 @@ pool:
   #env:
     #PAYLOAD: ${{toJSON(github.event.client_payload)}}
 steps:
-- script: echo "Hello World"
-          node --version
-          node index.js
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      targetPath: '$(Pipeline.Workspace)'
+  - script: |
+      curl -o $(Pipeline.Workspace)/index.js
+    displayName: 'Dowmload index.js from GitHub'
+  - script: 
+      echo "Hello World"
+      node --version
+      node index.js
+    
+  
 
   
     
