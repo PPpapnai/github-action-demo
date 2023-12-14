@@ -7,15 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    npm install
-    npm help
+  vmImage: "windows-latest"
+jobs:
+- job: Work
+  steps:
+  - script: echo Hello, world!
   
