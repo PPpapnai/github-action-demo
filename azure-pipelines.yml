@@ -18,7 +18,7 @@ steps:
       curl --help
       echo "Hello World"
       node --version
-      node index.js
+      node hello.js
     displayName: 'Dowmload index.js from GitHub'
    
       
