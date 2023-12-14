@@ -15,7 +15,7 @@ steps:
     inputs:
       targetPath: '$(Pipeline.Workspace)'
   - script: |
-      curl -o $(Pipeline.Workspace)/index.js
+      curl --help
     displayName: 'Dowmload index.js from GitHub'
   - script: 
       echo "Hello World"
