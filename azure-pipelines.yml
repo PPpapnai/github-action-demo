@@ -5,17 +5,18 @@
 
 trigger:
 - main
-
+ 
 pool:
-  vmImage: ubuntu-latest
-
+  vmImage: windows-latest
+  env:
+    PAYLOAD: ${{toJSON(github.event.client_payload)}}
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+- script: echo "Hello World"
+          node --version
+          node index.js
 
-- script: |
-    npm install
-    npm help
+  
+    
+      
+
   
