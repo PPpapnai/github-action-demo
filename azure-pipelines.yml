@@ -16,11 +16,12 @@ steps:
       targetPath: '$(Pipeline.Workspace)'
   - script: |
       curl --help
-    displayName: 'Dowmload index.js from GitHub'
-  - script: 
       echo "Hello World"
       node --version
       node index.js
+    displayName: 'Dowmload index.js from GitHub'
+   
+      
     
   
 
