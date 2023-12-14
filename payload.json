@@ -1,4 +1,10 @@
 {
-    "name":"Hello World",
-    "code":"running"
-}
+    "cloud_platform": "AWS",
+    "environment": "Dev",
+    "region": "Central Asia Pacific",
+    "resources": [ { "count": "1", "resource_type": "AmazonEC-2" } ],
+    "task_details": {
+      "task_guid": "0ea18ff947c7791009c26f62e36d4331",
+      "task_number": "SCTASK0010036"
+    }
+  }
