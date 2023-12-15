@@ -11,7 +11,7 @@ pool:
   #env:
     #PAYLOAD: ${{toJSON(github.event.client_payload)}}
 variables:
-  PAYLOAD: ${{toJSON(github.event.client_payload)}}
+  PAYLOAD: $[ dependencies.PayloadCreation.outputs['payload'] ]
 steps:
   - task: DownloadPipelineArtifact@2
     
