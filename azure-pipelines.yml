@@ -12,8 +12,8 @@ pool:
     #PAYLOAD: ${{toJSON(github.event.client_payload)}}
 steps:
   - task: DownloadPipelineArtifact@2
-    env:
-      PAYLOAD: ${{toJSON(github.event.client_payload)}}
+    #env:
+      #PAYLOAD: ${{toJSON(github.event.client_payload)}}
       
     inputs:
       targetPath: '$(Pipeline.Workspace)'
