@@ -14,12 +14,17 @@ steps:
   - task: DownloadPipelineArtifact@2
     inputs:
       targetPath: '$(Pipeline.Workspace)'
+      
   - script: |
+      env:
+        PAYLOAD: ${{toJSON(github.event.client_payload)}}
       curl --help
       echo "Hello World"
       node --version
-      node hello.js
+      node index.js
     displayName: 'Download index.js from GitHub'
+    
+      
    
       
     
