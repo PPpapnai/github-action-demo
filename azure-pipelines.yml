@@ -10,10 +10,7 @@ pool:
   vmImage: windows-latest
   #env:
     #PAYLOAD: ${{toJSON(github.event.client_payload)}}
-resources:
-  webhooks:
-    - webhook: GETPAYLOAD
-      connection: GETPAYLOAD_CON
+
 steps:
   - task: PowerShell@2
     
