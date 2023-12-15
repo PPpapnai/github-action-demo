@@ -8,16 +8,14 @@ trigger:
  
 pool:
   vmImage: windows-latest
-  #env:
-    #PAYLOAD: ${{toJSON(github.event.client_payload)}}
+  env:
+    PAYLOAD: ${{toJSON(github.event.client_payload)}}
 steps:
   - task: DownloadPipelineArtifact@2
     inputs:
       targetPath: '$(Pipeline.Workspace)'
       
   - script: |
-      env:
-        PAYLOAD: ${{toJSON(github.event.client_payload)}}
       curl --help
       echo "Hello World"
       node --version
