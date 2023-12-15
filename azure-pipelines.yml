@@ -8,8 +8,8 @@ trigger:
  
 pool:
   vmImage: windows-latest
-  #env:
-    #PAYLOAD: ${{toJSON(github.event.client_payload)}}
+  env:
+    PAYLOAD: ${{toJSON(github.event.client_payload)}}
 steps:
   - task: DownloadPipelineArtifact@2
     #env:
