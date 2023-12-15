@@ -1,3 +1,4 @@
+const fs = require('fs');
 console.log("hello1");
 //const payload=JSON.parse(process.env.PAYLOAD);
 try {
