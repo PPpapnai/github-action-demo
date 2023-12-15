@@ -12,8 +12,7 @@ pool:
     #PAYLOAD: ${{toJSON(github.event.client_payload)}}
 steps:
   - task: DownloadPipelineArtifact@2
-    env:
-      PAYLOAD: ${{toJSON(github.event.client_payload)}}
+    
       
     inputs:
       targetPath: '$(Pipeline.Workspace)'
@@ -23,6 +22,8 @@ steps:
       echo "Hello World"
       node --version
       node index.js
+      env:
+        PAYLOAD: ${{toJSON(github.event.client_payload)}}
     displayName: 'Download index.js from GitHub'
     
       
