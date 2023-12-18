@@ -1,5 +1,6 @@
 const fs = require('fs');
 console.log("hello1");
+console.log("webhooks enabled")
 //const payload=JSON.parse(process.env.PAYLOAD);
 try {
     const payload1=JSON.parse(fs.readFileSync('./payload.json'))
