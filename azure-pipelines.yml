@@ -22,7 +22,6 @@ steps:
 
       curl --help
       echo "Hello World"
-      Write-Host "${{parameters.GETPAYLOAD.resource.workItemId}}"
       node --version
       node index.js
       
