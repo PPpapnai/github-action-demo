@@ -22,17 +22,5 @@ jobs:
         run: node --version
       - name: run js file
         run: node index.js
-      - name: terraform init
-        run: |
-          cd ./env/
-          terraform init
-      - name: terraform plan
-        run: |
-          cd ./env/
-          terraform plan
-      
-      - name: terraform apply
-        run: |
-          cd ./env/
-          terraform apply
+     
       
