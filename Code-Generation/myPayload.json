@@ -1,0 +1,14 @@
+{
+  "cloud_platform": "azure",
+  "environment": "Dev",
+  "hosting_region": "germanywestcentral",
+  "resource_name":"Resource group",
+  "project_name":"az106",
+  "resources": [ { "count": "1", "resource_type": "resourcegroup", "details":"{\"address_space\":\"10.0.0.0/18\"}"} ],
+  "server_hosted_on": "Azure Cloud",
+  "target_end_date": "2024-01-03",
+  "task_details": {
+    "task_guid": "75a2eb7047e3791009c26f62e36d4391",
+    "task_number": "SCTASK0010063"
+  }
+}
