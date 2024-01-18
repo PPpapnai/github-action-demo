@@ -1,7 +1,7 @@
 
 
-const payload=JSON.parse(process.env.client_payload);
-console.log(payload)
+const payload=JSON.parse(process.env.PAYLOAD);
+console.log(payload);
 
 
 
