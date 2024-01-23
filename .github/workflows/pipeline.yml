@@ -27,7 +27,7 @@ jobs:
     needs: test
     steps:
       - name: Notify ServiceNow on failure
-        if: failure()
+        if: needs.test.result == 'failure'
         run: |
           curl -X POST -H "Content-Type": application/json -H
           "Authorization: Bearer ${{secrets.SERVICE_NOW_API_KEY}}" -d 
