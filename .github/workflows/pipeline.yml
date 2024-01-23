@@ -22,5 +22,19 @@ jobs:
         run: node --version
       - name: run js file
         run: node index.js
-     
+  notify_service_now:
+    runs-on: windows-latest
+    needs: test
+    steps:
+      - name: Notify ServiceNow on failure
+        if: failure()
+        run: |
+          curl -X POST -H "Content-Type": application/json -H
+          "Authorization: Bearer ${{secrets.SERVICE_NOW_API_KEY}}" -d 
+          '{
+              "u_task_number":"SCTASK0010089",
+              "u_state":"Closed Incomplete",
+              "u_stage":"Fulfillment",
+              "u_status":"Communication Error"}'
+              https://dev85238.service-now.com/api/now/import/u_status_api
       
