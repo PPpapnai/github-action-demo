@@ -1,7 +1,9 @@
 
 
-const payload=JSON.parse(process.env.PAYLOAD);
-console.log(payload);
+// const payload=JSON.parse(process.env.PAYLOAD);
+// console.log(payload);
+const snowData = JSON.parse(fs.readFileSync('./payload.json'));
+console.log(snowData);
 
 
 
