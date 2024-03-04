@@ -19,9 +19,9 @@ steps:
       targetType: 'inline'
       
   - script: |
-      echo environment: $(environment)
-      echo server_hosted_on: $(server_hosted_on)
-      echo target_end_date: $(target_end_date)
+      echo $(environment)
+      echo $(server_hosted_on)
+      echo $(target_end_date)
       curl --help
       echo "Hello World"
       node --version
