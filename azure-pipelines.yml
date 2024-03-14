@@ -23,9 +23,15 @@ steps:
       
   - script: |
       attributes=$(echo $(parameters.attributes) | jq .)
-      echo $(environment)
-      echo $(server_hosted_on)
-      echo $(target_end_date)
+      disk_size=$(echo $attributes | jq -r '.[0].disk_size')
+      value2=$(echo $attributes | jq -r '.[0].value2')
+      value3=$(echo $attributes | jq -r '.[0].value3')
+      echo $(resource_count)
+      echo $(resource_SKU)
+      echo $(resource_subtype)
+      echo $(resource_target_platform)
+      echo $(resource_type)
+      echo $(resource_location)
       curl --help
       echo "Hello World"
       node --version
