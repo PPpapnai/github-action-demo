@@ -20,7 +20,7 @@ steps:
     
    
       
-  - script: |
+  - pwsh: |
       $attributes = "$(parameters.attributes)" | ConvertFrom-Json
       $disk_size = $attributes[0].disk_size
       $value1 = $attributes[0].value1
