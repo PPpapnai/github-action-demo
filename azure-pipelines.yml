@@ -24,6 +24,10 @@ steps:
    
       
   - script: |
+      $attributes = "$(parameters.attributes)" | ConvertFrom-Json
+      $disk_size = $attributes[0].value1
+      $value1 = $attributes[0].value2
+      $value2 = $attributes[0].value3
       echo $(resource_count)
       echo $(resource_SKU)
       echo $(resource_subtype)
