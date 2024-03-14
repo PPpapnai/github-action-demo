@@ -24,12 +24,6 @@ steps:
    
       
   - script: |
-      variables:
-        attributes=$(echo $(parameters.attributes) | jq .)
-        disk_size=$(echo $attributes | jq -r '.[0].disk_size')
-        value2=$(echo $attributes | jq -r '.[0].value2')
-        value3=$(echo $attributes | jq -r '.[0].value3')
-      
       echo $(resource_count)
       echo $(resource_SKU)
       echo $(resource_subtype)
