@@ -1,0 +1,104 @@
+{
+  "VM_RHEL8_OnPrem": [
+    "VM_RHEL8_OnPrem_001",
+    "VM_RHEL8_OnPrem_002",
+    "VM_RHEL8_OnPrem_003",
+    "VM_RHEL8_OnPrem_004",
+    "VM_RHEL8_OnPrem_005",
+    "VM_RHEL8_OnPrem_006",
+    "VM_RHEL8_OnPrem_007",
+    "VM_RHEL8_OnPrem_008",
+    "VM_RHEL8_OnPrem_009"
+  ],
+  "App1-P-NY-5": [
+    "App1-P-NY-5-000",
+    "App1-P-NY-5-001",
+    "App1-P-NY-5-002",
+    "App1-P-NY-5-003"
+  ],
+  "App1-D-NY-5": [
+    "App1-D-NY-5-000",
+    "App1-D-NY-5-001",
+    "App1-D-NY-5-002",
+    "App1-D-NY-5-003"
+  ],
+  "App2-D-NY-5": [
+    "App2-D-NY-5-000",
+    "App2-D-NY-5-001",
+    "App2-D-NY-5-002",
+    "App2-D-NY-5-003"
+  ],
+  "App3-D-NY-5": [
+    "App3-D-NY-5-000",
+    "App3-D-NY-5-001",
+    "App3-D-NY-5-002",
+    "App3-D-NY-5-003"
+  ],
+  "App4-D-NY-5": [
+    "App4-D-NY-5-000",
+    "App4-D-NY-5-001",
+    "App4-D-NY-5-002",
+    "App4-D-NY-5-003",
+    "App4-D-NY-5-004",
+    "App4-D-NY-5-005"
+  ],
+  "App5-D-NY-5": [
+    "App5-D-NY-5-000",
+    "App5-D-NY-5-001",
+    "App5-D-NY-5-002",
+    "App5-D-NY-5-003"
+  ],
+  "App6-D-NY-5": [
+    "App6-D-NY-5-000",
+    "App6-D-NY-5-001",
+    "App6-D-NY-5-002",
+    "App6-D-NY-5-003"
+  ],
+  "App7-D-NY-5": [
+    "App7-D-NY-5-000",
+    "App7-D-NY-5-001",
+    "App7-D-NY-5-002",
+    "App7-D-NY-5-003"
+  ],
+  "App8-D-NY-5": [
+    "App8-D-NY-5-000",
+    "App8-D-NY-5-001",
+    "App8-D-NY-5-002",
+    "App8-D-NY-5-003"
+  ],
+  "App9-D-NY-5": [
+    "App9-D-NY-5-000",
+    "App9-D-NY-5-001",
+    "App9-D-NY-5-002",
+    "App9-D-NY-5-003"
+  ],
+  "App1-T-NY-5": [
+    "App1-T-NY-5-000",
+    "App1-T-NY-5-001",
+    "App1-T-NY-5-002",
+    "App1-T-NY-5-003"
+  ],
+  "APP3-P-NY-5": [
+    "APP3-P-NY-5-000",
+    "APP3-P-NY-5-001",
+    "APP3-P-NY-5-002",
+    "APP3-P-NY-5-003"
+  ],
+  "App1-R-NY-5": [
+    "App1-R-NY-5-000",
+    "App1-R-NY-5-001",
+    "App1-R-NY-5-002",
+    "App1-R-NY-5-003"
+  ],
+  "VM_RHEL8_Azure": [
+    "VM_RHEL8_Azure_001",
+    "VM_RHEL8_Azure_099"
+  ],
+  "VM_Win2022_Azure": [
+    "VM_Win2022_Azure_001",
+    "VM_Win2022_Azure_002"
+  ],
+  "VM_Win2022_OnPrem": [
+    "VM_Win2022_OnPrem_009"
+  ]
+}
